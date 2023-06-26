@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Website</h1>
+        <a href="#" onclick="showCart()">Cart (<span id="cartCount">0</span>)</a>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product">
+                <img src="Product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Product1.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$24.99</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart" style="display: none;">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
